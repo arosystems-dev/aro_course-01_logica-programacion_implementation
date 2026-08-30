@@ -1,0 +1,42 @@
+<!-- EJE-03_OPERACION-ARITMETICA
+=================================== -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eje-03_operacion-aritmetica</title>
+</head>
+
+<body>
+  <script>
+    // VARIABLES Y CONSTANTES
+    let num1, num2, opt, result;
+
+    // RECIBIR DATOS
+    num1 = parseFloat(prompt('INGRESE EL PRIMER NÚMERO'));
+    num2 = parseFloat(prompt('INGRESE EL SEGUNDO NÚMERO'));
+    opt = parseFloat(prompt('SELECCIONE UNA OPCIÓN: \n 1) Sumar Números \n 2) Restar Números \n 3) Multiplicar Números \n 4) Dividir Números'));
+
+    // PROCESAR DATOS
+    if (opt == 1)
+      result = num1 + ' + ' + num2 + ' = ' + (num1 + num2);
+    else
+      if (opt == 2)
+        result = num1 + ' - ' + num2 + ' = ' + (num1 - num2);
+      else
+        if (opt == 3)
+          result = num1 + ' * ' + num2 + ' = ' + (num1 * num2);
+        else
+          if (opt == 4)
+            result = num1 + ' / ' + num2 + ' = ' + (num1 / num2);
+          else
+            result = 'Opción inválida';
+
+    // MOSTRAR RESULTADO
+    alert(result);
+  </script>
+</body>
+
+</html>

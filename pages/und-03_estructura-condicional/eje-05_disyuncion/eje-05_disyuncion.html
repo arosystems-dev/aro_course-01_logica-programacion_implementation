@@ -1,0 +1,38 @@
+<!-- EJE-05_DISYUNCION
+====================================== -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eje-05_disyuncion</title>
+</head>
+
+<body>
+  <script>
+    // VARIABLES Y CONSTANTES
+    let num, result;
+    const inf1 = 5;
+    const sup1 = 10;
+    const inf2 = 15;
+    const sup2 = 20;
+
+    // RECIBIR DATOS
+    num = parseFloat(prompt('INGRESE UN NÚMERO ENTRE LOS RANGOS DE: ' + inf1 + ' y ' + sup1 + ' o ' + inf2 + ' y ' + sup2));
+
+    // PROCESAR DATOS
+    if ((inf1 <= num && num <= sup1) || (inf2 <= num && num <= sup2))
+      if (inf1 <= num && num <= sup1)
+        result = 'El número ' + num + ' está en el rango de: ' + inf1 + ' y ' + sup1;
+      else
+        result = 'El número ' + num + ' está en el rango de: ' + inf2 + ' y ' + sup2;
+    else
+      result = 'El número está fuera del rango pedido...!!';
+
+    // MOSTRAR RESULTADO
+    alert(result);
+  </script>
+</body>
+
+</html>

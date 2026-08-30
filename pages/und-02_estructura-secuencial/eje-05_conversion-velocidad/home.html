@@ -1,0 +1,80 @@
+<!-- HOME_EJE-05
+===================================== -->
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>home_eje-05</title>
+  <link href="../../../css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../../css/style.css" rel="stylesheet" />
+</head>
+
+<body class="p-3">
+  <header>
+    <h3>ESTRUCTURA DE CONTROL SECUENCIAL</h3>
+    <h5>Ejercicio # 05 (Conversion de Velocidad)</h5>
+  </header>
+  <hr>
+  <section>
+
+    <!-- OPCIONES -->
+    <ul class="nav nav-tabs" id="miTab" role="tablist">
+      <li class="nav-item">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">
+          Modelado
+        </button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">
+          Implementación
+        </button>
+      </li>
+    </ul>
+
+    <!-- CONTENIDO -->
+    <div class="tab-content mt-3">
+
+      <!-- MODELING -->
+      <div class="tab-pane fade show active" id="tab1">
+        <div class="card p-3">
+          <h5>1. REQUERIMIENTOS</h5>
+          <p>¿Qué es lo que quiere el Cliente?</p>
+          <img src="img/requerimiento.png" alt="img-req" class="img-fluid img-modeling">
+          <h5>2. PROPUESTA</h5>
+          <p>¿Qué solución se propone?</p>
+          <img src="img/propuesta.png" alt="img-pro" class="img-fluid img-modeling">
+          <h5>3. ESTRUCTURA</h5>
+          <p>¿Cómo se implementará la propuesta?</p>
+          <img src="img/estructura.png" alt="img-str" class="img-fluid img-modeling">
+        </div>
+      </div>
+
+      <!-- IMPLEMENTATION -->
+      <div class="tab-pane fade" id="tab2">
+        <div class="card p-3">
+          <div class="text-end">
+            <button id="btn-run" class="btn btn-success">RUN CODE</button>
+          </div>
+          <hr>
+          <!-- CODE-IMG -->
+          <img src="img/code.png" alt="img-code" width="100%">
+          <!-- CODE -->
+          <iframe id="code" data-src="eje-05_conversion-velocidad.html">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../../../js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("btn-run").addEventListener("click", function () {
+      const frame = document.getElementById("code");
+      frame.src = frame.dataset.src;
+    });    
+  </script>
+</body>
+
+</html>

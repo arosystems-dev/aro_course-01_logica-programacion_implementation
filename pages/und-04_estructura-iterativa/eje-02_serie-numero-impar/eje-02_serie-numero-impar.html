@@ -1,0 +1,32 @@
+<!-- EJE-02_SERIE-NUMERO-IMPAR
+====================================== -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eje-01_serie-numero-impar</title>
+</head>
+
+<body>
+  <script>
+    // VARIABLES Y CONSTANTES
+    let num, result;
+
+    // RECIBIR DATOS
+    num = parseInt(prompt('INGRESE UN NÚMERO LÍMITE'));
+    result = '';
+
+    // PROCESAR DATOS
+    for (let i = 0; i < num; i++) {
+      if ((i % 2 == 1) && (i % 3 == 0))
+        result = result + ' ' + i;
+    }
+
+    // MOSTRAR RESULTADO
+    alert(result);
+  </script>
+</body>
+
+</html>

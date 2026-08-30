@@ -1,0 +1,30 @@
+<!-- EJE-05_CONVERSION-VELOCIDAD
+=================================== -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eje-05_conversion-velocidad</title>
+</head>
+
+<body>
+  <script>
+    // VARIABLES Y CONSTANTES    
+    let v1, v2;
+
+    // RECIBIR DATOS
+    v1 = parseFloat(prompt('INGRESE LA VELOCIDAD EN km/h'));
+
+    // PROCESAR DATOS
+    v2 = (v1 * (1000 / 1) * (1 / 3600)).toFixed(2); // Redondeo a 2 decimales
+
+    // MOSTRAR RESULTADO
+    alert(
+      v1 + ' km/h  =  ' + v2 + ' m/s'
+    );
+  </script>
+</body>
+
+</html>

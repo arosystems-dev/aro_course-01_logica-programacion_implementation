@@ -1,0 +1,37 @@
+<!-- EJE-04_OPERACIÓN-ARITMÉTICA
+=================================== -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eje-04_operacion-aritmetica</title>
+</head>
+
+<body>
+  <script>
+    // VARIABLES Y CONSTANTES    
+    let num1, num2, sum, res, mul, div;
+
+    // RECIBIR DATOS
+    num1 = parseFloat(prompt('INGRESE EL PRIMER NÚMERO...'));
+    num2 = parseFloat(prompt('INGRESE EL SEGUNDO NÚMERO...'));
+
+    // PROCESAR DATOS
+    sum = num1 + num2;
+    res = num1 - num2;
+    mul = num1 * num2;
+    div = num1 / num2;
+
+    // MOSTRAR RESULTADO
+    alert(
+      num1 + ' + ' + num2 + ' = ' + sum + '\n' +
+      num1 + ' - ' + num2 + ' = ' + res + '\n' +
+      num1 + ' * ' + num2 + ' = ' + mul + '\n' +
+      num1 + ' / ' + num2 + ' = ' + div
+    );
+  </script>
+</body>
+
+</html>

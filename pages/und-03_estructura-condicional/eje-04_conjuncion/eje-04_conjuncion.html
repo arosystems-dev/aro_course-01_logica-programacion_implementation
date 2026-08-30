@@ -1,0 +1,33 @@
+<!-- EJE-04_CONJUNCION
+====================================== -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eje-04_conjuncion</title>
+</head>
+
+<body>
+  <script>
+    // VARIABLES Y CONSTANTES
+    let num, result;
+    const inf = 5;
+    const sup = 10;
+
+    // RECIBIR DATOS
+    num = parseFloat(prompt('INGRESE UN NÚMERO ENTRE EL RANGO DE: ' + inf + ' y ' + sup));
+
+    // PROCESAR DATOS
+    if (inf <= num && num <= sup)
+      result = 'El número ' + num + ' está en el rango de: ' + inf + ' y ' + sup;
+    else
+      result = 'El número está fuera del rango pedido...!!';
+
+    // MOSTRAR RESULTADO
+    alert(result);
+  </script>
+</body>
+
+</html>
