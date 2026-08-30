@@ -18,3 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+// ROUTES LOCAL / PRODUCCIÓN
+function rutaPortal() {
+    if (window.location.hostname === 'arosystems-dev.github.io') {
+        return 'https://arosystems-dev.github.io/portal/';
+    } else {
+        return '../portal/index.html';
+    }
+}
+
+// ROUTE
+document.getElementById('link-portal').href = rutaPortal();
