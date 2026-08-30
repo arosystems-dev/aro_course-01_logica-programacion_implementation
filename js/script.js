@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         });
     });
-
 });
 
 // ROUTES LOCAL / PRODUCCIÓN
@@ -29,3 +28,5 @@ function rutaPortal() {
 
 // ROUTE
 document.getElementById('link-portal').href = rutaPortal();
+
+
